@@ -250,6 +250,14 @@ PRODUCT_PACKAGES += \
     e2fsck_static \
     resize2fs_static
 
+# Fake QTI jar
+PRODUCT_PACKAGES += \
+    qti-telephony-common \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \
